@@ -16,16 +16,20 @@
     </ul>
     <ul>
     <li>
-        <a href="">
+        <a href="/niggas/{{$ninjas[0]["id"]  }}">
         {{$ninjas[0]['name']  }}
         </a>
     </li>
     <li>
-        <a href="">
+        <a href="/niggas/{{$ninjas[1]["id"]  }}">
         {{$ninjas[1]['name']  }}
         </a>
     </li>
-
+    <li>
+        <a href="/niggas/{{$ninjas[2]["id"]  }}">
+        {{$ninjas[2]['name']  }}
+        </a>
+    </li>
     </ul>
 </body>
 </html>

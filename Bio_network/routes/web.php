@@ -14,3 +14,8 @@ Route::get('/niggas',function(){
     ];
     return view('niggas.index', ['greeting'=>'hello', 'ninjas'=>$ninjas]);
 });
+
+Route::get('/niggas/{id}',function($id){
+
+    return view('niggas.show', ['id'=>$id]);
+});
