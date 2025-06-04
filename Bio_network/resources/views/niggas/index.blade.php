@@ -6,11 +6,26 @@
 </head>
 <body>
     <h2>List of Niggas</h2>
-    
+    <p>
+        {{$greeting}}
+    </p>
     <ul>
         <li>
             Niggas here
         </li>    
+    </ul>
+    <ul>
+    <li>
+        <a href="">
+        {{$ninjas[0]['name']  }}
+        </a>
+    </li>
+    <li>
+        <a href="">
+        {{$ninjas[1]['name']  }}
+        </a>
+    </li>
+
     </ul>
 </body>
 </html>
