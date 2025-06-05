@@ -9,17 +9,34 @@
     <p>
         {{$greeting}}
     </p>
+    @if($greeting == 'hello')
+    <p>
+        owen
+ go to beddy.
+    </p>
+
+    @endif
     <ul>
+        @foreach($ninjas as $ninja)
         <li>
-            Niggas here
-        </li>    
+                <p>
+                {{$ninja['name']}}
+                </p>
+            <a href="/niggas/{{$ninja["id"]  }}">
+             View Details
+            </a>
+        </li>
+    @endforeach
     </ul>
     <ul>
+    {{--}}
     <li>
         <a href="/niggas/{{$ninjas[0]["id"]  }}">
         {{$ninjas[0]['name']  }}
         </a>
     </li>
+
+    
     <li>
         <a href="/niggas/{{$ninjas[1]["id"]  }}">
         {{$ninjas[1]['name']  }}
@@ -31,5 +48,6 @@
         </a>
     </li>
     </ul>
+    {{--}}
 </body>
 </html>
