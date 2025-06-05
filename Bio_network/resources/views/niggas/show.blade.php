@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>
-    ninjas -- {{$id}}    
+    owen -- {{$skill}}    
     </h2>
 </body>
 </html>
