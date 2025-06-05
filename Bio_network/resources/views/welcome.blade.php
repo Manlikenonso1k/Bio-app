@@ -106,10 +106,6 @@
           </div>
         </div>
       </div>
-     
-      <a href="">
-      hey
-      </a>
     </section> 
   </body>
 </html>
