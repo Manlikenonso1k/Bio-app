@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@vite(['resources/css/index1.css', 'resources/js/index.js'])
     <title>SkillSync AI</title>
     <link rel="icon" href="title logo3.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,7 @@
       <nav class="middle-section">
         <div class="left-section">
           <a>
-            <img src="home.svg" >
+            <img src="{{ asset('images/home.svg') }}">
           </a>
         </div>
         <div class="nav-content">
@@ -39,7 +40,7 @@
           <div class="nav-list">
             <div class="nav-list-list">
               <div>Resume</div>
-              <div>Cover Letter</div>
+              <div>Cover Letter</div>q
               <div>Career Support</div>
               <div>Blog</div>
               <div>Financing</div>
@@ -85,19 +86,19 @@
           </p>
           <div class="companies">
             <div>
-              <img  class="linkedin" src="New folder/linkedin.png" >
+              <img class="linkedin" src="{{ asset('images/linkedin.png') }}">
             </div>
             <div>
-              <img  class="google" src="New folder/google.png" >
+              <img class="google" src="{{ asset('images/google.png') }}">
             </div>
             <div>
-              <img class="amazon" src="New folder/amazon.png" >
+             <img class="amazon" src="{{ asset('images/amazon.png') }}">
             </div>
             <div>
-              <img class="instagram" src="New folder/instagram.png" >
+              <img class="instagram" src="{{ asset('images/instagram.png') }}">
             </div>
             <div>
-              <img  class="facebook" src="New folder/facebook.png" >
+              <img class="facebook" src="{{ asset('images/facebook.png') }}">
             </div>
           </div>
           <div class="section end">
