@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 @vite(['resources/css/index1.css', 'resources/js/index.js'])
     <title>SkillSync AI</title>
-    <link rel="icon" href="title logo3.png" type="image/icon type">
+    <link rel="icon" href="{{ asset('titlelogo3.png') }}" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,14 +21,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index1.css">
+    
   </head>
   <body>
     <header>
       <nav class="middle-section">
         <div class="left-section">
           <a>
-            <img src="{{ asset('images/home.svg') }}">
+            <img class="" src="{{ asset('images/home.svg') }}">
           </a>
         </div>
         <div class="nav-content">
@@ -40,7 +40,7 @@
           <div class="nav-list">
             <div class="nav-list-list">
               <div>Resume</div>
-              <div>Cover Letter</div>q
+              <div>Cover Letter</div>
               <div>Career Support</div>
               <div>Blog</div>
               <div>Financing</div>
@@ -108,7 +108,6 @@
       </div>
      
       
-    </section>
-    <script src="index.js"></script> 
+    </section> 
   </body>
 </html>
