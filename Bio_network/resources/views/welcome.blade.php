@@ -28,7 +28,7 @@
       <nav class="middle-section">
         <div class="left-section">
           <a>
-            <img class="" src="{{ asset('images/home.svg') }}">
+            <img class="" src="{{ asset('images/dashboard.svg') }}">
           </a>
         </div>
         <div class="nav-content">

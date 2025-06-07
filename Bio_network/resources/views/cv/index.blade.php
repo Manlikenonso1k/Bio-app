@@ -13,6 +13,10 @@
                         <strong>{{ $cv->name }}</strong><br>
                         <small>{{ $cv->email }}</small><br>
                         <p class="mt-1">{{ $cv->summary }}</p>
+
+                        <div class="mt-2">
+                            <a href="{{ route('cv.edit', $cv) }}" class="text-green-600 underline mr-4">Edit</a>
+                        </div>
                     </li>
                 @endforeach
             </ul>
