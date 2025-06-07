@@ -6,16 +6,16 @@ use PhpParser\Builder\Function_;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/niggas',function(){
-    $ninjas= [
-        ['name'=>'mariao','skill'=>'manager','id'=>'1'],
-        ['name'=> 'paul','skill'=> 'scam','id'=> '2'],
-        ['name'=> 'nonso','[skill'=> 'programming','id'=> '3'],
-    ];
-    return view('niggas.index', ['greeting'=>'hello', 'ninjas'=>$ninjas]);
-});
 
-Route::get('/niggas/{id}',function($id){
+Route::get('/cv/create', function () {
+    return 'CV Creation Page Coming Soon';
+})->name('cv.create')->middleware('auth');
 
-    return view('niggas.show', ['id'=>$id]);
-});
+use App\Http\Controllers\CvController;
+
+Route::get('/cv/create', [CvController::class, 'create'])->name('cv.create')->middleware('auth');
+Route::post('/cv/store', [CvController::class, 'store'])->name('cv.store')->middleware('auth');
+Route::get('/cv/list', [CvController::class, 'index'])->name('cv.index')->middleware('auth');
+Route::get('/cv/{cv}/edit', [CvController::class, 'edit'])->name('cv.edit')->middleware('auth');
+Route::put('/cv/{cv}', [CvController::class, 'update'])->name('cv.update')->middleware('auth');
+Route::delete('/cv/{cv}', [CvController::class, 'destroy'])->name('cv.destroy')->middleware('auth');

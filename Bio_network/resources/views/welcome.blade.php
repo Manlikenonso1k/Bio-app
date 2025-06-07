@@ -74,12 +74,12 @@
             Build your <span>Resume</span>, Save <span>Time</span> and get hired with our <span>AI powered tool</span>
           </h1>
           <div class="section-button">
-            <button class="one">
-              Build your Resume
-            </button>
-            <button class="two">
+            <a href="{{ route('cv.create') }}" class="one">
+             Build your Resume
+            </a>
+            <a href="{{ route('cv.create') }}" class="two">
               Start your life
-            </button>
+            </a>
           </div>
           <p class="love">
             Loved by interviewers at
