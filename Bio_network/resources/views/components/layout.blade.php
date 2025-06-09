@@ -8,8 +8,8 @@
     <header>
         <nav>
             <h1>Ninja Network</h1>
-            <a href="/ninjas">All Niggas</a>
-            <a href="/ninjas/create">Create New Niggas</a>
+            <a href="/niggas">All Niggas</a>
+            <a href="/niggas/create">Create New Niggas</a>
         </nav>
     </header>
     <main class="container">
