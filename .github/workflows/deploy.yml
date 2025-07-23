@@ -21,6 +21,6 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           port: ${{ secrets.FTP_PORT }}
-          local-dir: ./
+          local-dir: ./public/
           server-dir: /htdocs/
 
