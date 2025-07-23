@@ -21,5 +21,5 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           port: ${{ secrets.FTP_PORT }}
-          local-dir: ./bio_network
-          server-dir: /htdocs/bio_network
+          local-dir: ./bio_network/
+          server-dir: /htdocs/bio_network/
